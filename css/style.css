@@ -1,0 +1,422 @@
+/*mobile*/
+    .nav_links{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .even{
+        color:navy;
+    }
+    
+    .odd{
+        color: navy;
+        
+    
+    }
+    
+    #nav{
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1; 
+    }
+    
+    h1{
+        color: navy;
+        font-family: Arvo,sans-serif;
+        text-align: center;
+    }
+
+    #ftitle{
+        font-family: Mitr,sans-serif;
+    }
+    
+    h2{
+        font-family: Roboto,sans-serif;
+    }
+    
+    p{
+        font-family: Roboto,sans-serif;
+    }
+    main{
+        padding: 4%;
+    }
+    .mainpic{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: 5px solid cornflowerblue;
+    }
+
+    
+    #gallery{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer{
+        background-color: black;
+        color:white;
+        position: relative;
+        bottom:0;
+        margin-left:0;
+        width: 100%;
+        min-height: 75px;
+        padding: 0.5%;
+        font-size: smaller;
+        font-family: Roboto,sans-serif;
+
+    }
+    
+    a{
+        color:black;
+        font-family: Roboto,sans-serif;
+        text-decoration: none;
+    }
+    
+    a:visited{
+        color:black;
+        font-family: Arial,sans-serif;
+        text-decoration: none;
+    }
+    
+    
+    ul{
+        list-style: none;
+    }
+
+    .active{
+        font-weight: 800;
+        text-decoration: underline; 
+    }
+
+    a:hover{
+        text-decoration: underline;   
+    }
+
+    #ffacts{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 20px;
+    }
+    li{
+        font-family: Roboto,sans-serif;
+    }
+
+    .qfacts{
+        font-weight: 700;
+    }
+    #home_caption{
+        color: #2B2D2F;
+    }
+
+    .skipto{
+        opacity: 0;
+    }
+      
+    .skipto:focus{
+        opacity: 1;
+        top:20px;
+        color: black;
+    }
+    .locationImage{
+        display: block;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .dietImage{
+        display: block;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .threatsImage{
+        display: block;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .banners{
+        background-color: cornflowerblue;
+        padding: 10%;
+    }
+    label{
+        font-family: Roboto,sans-serif;
+    }
+    .input-block{
+        padding: 7% 2%;
+    }
+    .contact-wrap{
+        background-color: cornflowerblue;
+        padding: 5%;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #hometitle{
+        background-image: url("../images/arctic.jpg");
+        padding-top: 5%;
+        min-height: 400px;
+        
+        width: 100%;
+        border-width: 0px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #homepic{
+        display:none;
+    }
+
+    #ftitle {
+        animation-duration: 1s;
+        animation-name: grow;
+      }
+      
+      @keyframes grow {
+        from {
+            font-size: 25%;
+        }
+        25% {
+            font-size: 50%;
+        }
+      
+        75% {
+            font-size: 75%;
+        }
+      
+        to {
+            font-size: 100%;
+        }
+      }
+      #contactImage{
+          display:none;
+      }
+
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+    border: 1px solid #f1f1f1; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+  }
+
+  .flip-card:focus{
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden; 
+  }
+  
+  .flip-card-front{
+      display:block;
+      border-width: 10px;
+      border-style: groove;
+      border-color: skyblue;
+  }
+
+  .flip-card-back {
+    background-color: navy;
+    color: white;
+    transform: rotateY(180deg);
+    width: 400px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+/*tablet view*/
+@media screen and (min-width: 768px){
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav{
+        background: skyblue;
+        padding: 0.5%;
+    }
+    #ffacts{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 20px;
+    }
+    .long{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .one{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .two{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .three{
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    /*bowhead banners*/
+    .banners{
+        background-color: cornflowerblue;
+        padding: 2%;
+    }
+  
+    .location{
+        display: flex;
+        flex-direction: row;
+    }
+    .locationImage{
+        width: 50%; 
+        height: 200px;
+    }
+    .locationP{
+        color: white;
+        padding: 5%;
+    }
+    .diet{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .dietImage{
+        width: 50%; 
+        height: 250px;
+    }
+    .dietP{
+        color: white;
+        padding: 5%;
+        width: 50%;
+    }
+    .threats{
+        display: flex;
+        flex-direction: row;
+    }
+    .threatsImage{
+        width: 50%; 
+        height: 250px;
+    }
+    .threatsP{
+        color: white;
+        padding: 5%;
+        width: 50%
+    }
+    /* Contact Form */
+    .input-block{
+        padding: 2%;
+    }
+    .contact-wrap{
+        background-color: cornflowerblue;
+        padding: 5%;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+    }
+    #contactImage{
+        display: inline-block;
+        width: 35%;
+        padding-right: 5%;
+    }
+    /*fun facts animation*/
+    #ftitle {
+        animation-duration: 1s;
+        animation-name: slidein;
+      }
+      
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+
+        25% {
+            margin-left: 75%;
+            width: 200%;
+        }
+      
+        75% {
+          margin-left: 25%;
+          width: 150%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+}
+/*desktop view*/
+@media screen and (min-width: 992px){
+    #ffacts{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+    }
+    .uno{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .dos{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .tres{
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    .quatro{
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+    .instruction{
+        display: inline-block;
+        font-size: 30px;
+
+    }
+    .flip-card{
+        display: inline-block;
+        margin-left: 90px;
+        margin-right: auto;
+
+        
+    }
+}
+
+/*prefers-reduced-motion*/
+@media (prefers-reduced-motion) {
+    #hometitle {
+      background-image: none;
+    }
+    #homepic{
+        display: block;
+    }
+    #ftitle{
+        animation-name: dissolve;
+    }
+    .flip-card .flip-card-inner {
+        display:none;
+      }
+}
